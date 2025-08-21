@@ -15,9 +15,9 @@ export default async function createAnswerCollection() {
     console.log("answer collection created");
 
     await Promise.all([
-        await database.createStringAttribute(db,answerCollection,'content',10000,true),
-        await database.createStringAttribute(db,answerCollection,'questionId',10000,true),
-        await database.createStringAttribute(db,answerCollection,'authorId',10000,true)
+        await database.createStringAttribute(db,answerCollection,'content',1000,true),
+        await database.createStringAttribute(db,answerCollection,'questionId',1000,true),
+        await database.createStringAttribute(db,answerCollection,'authorId',1000,true)
     ])
 
     console.log("answer collection attributes created");
